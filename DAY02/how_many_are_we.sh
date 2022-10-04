@@ -1,2 +1,2 @@
 #!/bin/bash
-grep $1$ | wc -l
+grep -i $1$ | wc -l
