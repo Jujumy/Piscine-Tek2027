@@ -1,7 +1,7 @@
 #!/bash/bin
 cd DAY01/
 echo "DAY01"
-echo "PUSH THAT OK"
+echo "CAN'T CHECK"
 cd ../
 echo ""
 cd DAY02/
@@ -14,5 +14,5 @@ sh find_sh.sh
 echo "Gotta catch Them All MARTIN"
 cat DAY02/passwd | ./gotta_catch_them_all.sh martin
 echo "How many are we Paris"
-cat DAY02/passwd | ./how_many_are_we.sh
+cat DAY02/students.csv | ./how_many_are_we.sh PAR
 echo "End of tests - Julien Grémy"
