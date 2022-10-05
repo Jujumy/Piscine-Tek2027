@@ -1,21 +1,23 @@
 /*
 ** EPITECH PROJECT, 2022
-** My Print Alpha Piscine
+** My Print Alpha
 ** File description:
-** Exercice de la piscine DAY 3
+** 
 */
+
 
 void my_putchar(char c);
 
-int my_print_alpha(void)
+int my_print_revalpha(void)
 {
-    char a = 97;
-    while(a <= 'z')
+    char a = 'z';
+    while(a >= 'a')
     {
         my_putchar(a);
-        a++;
+        a--;
     }
     return (0);
 }
+
 
 
