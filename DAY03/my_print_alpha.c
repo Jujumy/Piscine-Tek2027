@@ -5,10 +5,18 @@
 ** Exercice de la piscine DAY 3
 */
 
+void my_putchar(char c);
 
 int my_print_alpha(void)
 {
-    write (1, test, 1)
+    char a = 97;
+    while(a <= 'z')
+    {
+        my_putchar(a);
+        a++;
+    }
+    my_putchar('\n');
+    return (0);
 }
 
-int main(void);
+
