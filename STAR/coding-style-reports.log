@@ -1,0 +1,13 @@
+./a.out:1: MAJOR:C-O1
+./star.c:39: MINOR:C-L3
+./star.c:46: MINOR:C-L3
+./star.c:47: MAJOR:C-F4
+./star.c:48: MAJOR:C-F4
+./star.c:49: MAJOR:C-F4
+./star.c:50: MAJOR:C-F4
+./star.c:51: MAJOR:C-F4
+./star.c:52: MAJOR:C-F4
+./star.c:53: MAJOR:C-F4
+./star.c:54: MAJOR:C-F4
+./star.c:55: MAJOR:C-F4
+./star.c:56: INFO:C-A3
