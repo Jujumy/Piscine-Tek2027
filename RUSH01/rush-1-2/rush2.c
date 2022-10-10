@@ -1,0 +1,63 @@
+/*
+** EPITECH PROJECT, 2022
+** rush
+** File description:
+** rush file
+*/
+
+int my_putchar(char c);
+
+const char start_slash = '/';
+const char end_slash = '\\';
+const char space = ' ';
+const char star = '*';
+const char retour = '\n';
+
+void function(int x, int y);
+void line_down1(int x, int y);
+void line_down2(int x, int y);
+void line_up(int x, int y);
+void line_up2(int x, int y);
+
+void rush(int x, int y)
+{
+    if (x < 0 || y < 0) {
+        char *overflow = "Invalid Size\n";
+        char end = '\0';
+        int i = 0;
+        while (overflow[i] != end){
+            my_putchar(overflow[i]);
+            i += 1;
+        }
+    }
+    if (x >= 1 && y >= 1) {
+        function(x, y);
+        if (x > 1 && y > 1) {
+            line_down1(x, y);
+            my_putchar(retour);
+            line_up(x, y);
+            line_down2(x, y);
+            my_putchar(retour);
+        }
+    }
+}
+
+void line_up(int x, int y)
+{
+    for (int i = 0; i < y - 2; i++) {
+        my_putchar(star);
+        line_up2(x, y);
+        my_putchar(retour);
+    }
+}
+
+void line_up2(int x, int y)
+{
+    if (x > 1) {
+        for (int i = 0; i < x - 2; i++) {
+            my_putchar(space);
+        }
+        my_putchar(star);
+    }
+
+}
