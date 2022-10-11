@@ -1,0 +1,30 @@
+/*
+** EPITECH PROJECT, 2022
+** my_strncpy
+** File description:
+** ui
+*/
+
+int my_strlen2(char const *str)
+{
+    int i = 0;
+    while (str[i] != '\0'){
+        i += 1;
+    }
+    return (i);
+}
+
+char *my_strncpy(char *dest, char const *src, int n)
+{
+    int i = 0;
+    int m = my_strlen2(src);
+
+    while (n > 0 && src[i] != '\0') {
+        dest[i] = src[i];
+        i += 1;
+        n -= 1;
+    }
+    if (n > m)
+        dest[m] = '\0';
+    return (dest);
+}

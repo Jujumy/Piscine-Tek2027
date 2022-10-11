@@ -1,0 +1,11 @@
+/*
+** EPITECH PROJECT, 2022
+** put_chaar
+** File description:
+** ouais
+*/
+
+void my_putchar(char c)
+{
+    write(1, &c, 1);
+}
